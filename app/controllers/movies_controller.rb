@@ -5,7 +5,7 @@ class MoviesController < ApplicationController
   end
 
   def index
-    @movies = Move.all
+    @movies = Movie.all
     @movie = Movie.new
   end
 
