@@ -90,3 +90,6 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 =end
 end
+ENV["RAILS_ENV"] ||= 'test'
+require File.expand_path("../../config/environment", __FILE__)
+require 'rspec/rails'
