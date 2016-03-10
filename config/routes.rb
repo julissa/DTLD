@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'movies#index'
+  # root 'stories#index'
 
   resources :movies
   # The priority is based upon order of creation: first created -> highest priority.
