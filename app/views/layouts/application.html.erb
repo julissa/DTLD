@@ -8,6 +8,14 @@
 </head>
 <body>
   <nav class="navbar navbar-default">
+    <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <%= form_tag(stories_path(), method: :get) do %>
+            <%= text_field_tag :search, params[:search], class: "form-control" %>
+              <%= submit_tag "Search DTLD" %>
+              <% end %>
+        </div>
+    </form>
   </nav>
 
 <%= yield %>

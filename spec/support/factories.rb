@@ -1,6 +1,6 @@
 FactoryGirl.define do
 
-  factory :media do
+  factory :story do
     title 'Winnie the Pooh'
     synopsis 'About a bear'
     year '1989'
