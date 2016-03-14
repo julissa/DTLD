@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160308191422) do
+ActiveRecord::Schema.define(version: 20160314191159) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 20160308191422) do
     t.string  "character_name"
     t.string  "death"
     t.text    "description"
+    t.text    "actor"
   end
 
   create_table "stories", force: :cascade do |t|
