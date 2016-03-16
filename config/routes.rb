@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  # root 'stories#index'
+  root "pages#show", page: "home"
 
   get "/pages/:page" => "pages#show"
 
