@@ -1,3 +1,7 @@
-<% @stories.each do |story| %>
-<%= link_to story.title, story %>
+<% if @stories.present? %>
+  <% @stories.each do |story| %>
+  <%= link_to story.title, story %>
+  <% end %>
+<% else %>
+<%= "No results" %>
 <% end %>

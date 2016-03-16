@@ -3,8 +3,8 @@
 <h1><%= @story.title %></h1>
 <p><%= @story.synopsis %></p>
 <ul>
-  <% @characters.each do |character| %>
-  <li> <%= link_to character.character_name %> </li>
+  <% @story.characters.each do |character| %>
+  <li> <%= link_to character.character_name, story_character_path(@story, character) %> </li>
 
   <% end %>
 </ul>
