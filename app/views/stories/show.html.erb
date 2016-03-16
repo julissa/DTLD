@@ -4,7 +4,8 @@
 <p><%= @story.synopsis %></p>
 <ul>
   <% @characters.each do |character| %>
-  <li> <%= character.character_name %> </li>
+  <li> <%= link_to character.character_name %> </li>
+
   <% end %>
 </ul>
 
