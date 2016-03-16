@@ -43,6 +43,8 @@ group :development, :test do
   gem 'shoulda'
   gem 'capybara'
   gem 'launchy'
+  gem 'pry-rails'
+  gem 'pry'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'

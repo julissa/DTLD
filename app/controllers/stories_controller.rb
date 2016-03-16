@@ -10,6 +10,7 @@ class StoriesController < ApplicationController
 
   def show
     @story = Story.find(params[:id])
+    @characters = @story.characters.pluck(:character_name)
   end
 
   protected
