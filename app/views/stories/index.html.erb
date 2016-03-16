@@ -1,7 +1,11 @@
-<% if @stories.present? %>
-  <% @stories.each do |story| %>
-  <%= link_to story.title, story %>
+<div class=container>
+  <% if @stories.present? %>
+    <% @stories.each do |story| %>
+    <ul>
+      <li><h3> <%= link_to story.title, story %></h3></li>
+    </ul
+    <% end %>
+  <% else %>
+  <%= "No results" %>
   <% end %>
-<% else %>
-<%= "No results" %>
-<% end %>
+</div>
