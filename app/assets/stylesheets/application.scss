@@ -14,12 +14,23 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: #B687BD;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  background-color: #B687BD;
+}
+
 .navbar-default .navbar-nav > li > a {
   color: #ffffff;
 }
+
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
   background-color: #B687BD;
 }
+
 .navbar-default{
   background-color: #681C73;
   .navbar-brand{ color: #ffffff;
@@ -27,7 +38,12 @@
 }
 
 .jumbotron{
-  text-align: center;
+  h1{
+    text-align: center;
+  }
+  p{
+    text-align: center;
+  }
 }
 
 .container{

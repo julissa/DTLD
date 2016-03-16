@@ -1,7 +1,9 @@
 <div class="container">
 <div class="jumbotron">
 <h1><%= @story.title %></h1>
-<%= @story.synopsis %>
-<%= @story.characters[0][:character_name] %>
+<p><%= @story.synopsis %></p>
+<ul>
+  <li><%= @story.characters[0][:character_name] %></li>
+</ul>
 </div>
 </div>
